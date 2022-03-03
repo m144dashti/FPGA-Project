@@ -1,0 +1,5 @@
+work	"BcdTo7Segment.vhd"
+work	"Counter.vhd"
+work	"Decoder2To4.vhd"
+work	"Multiplexer16To4.vhd"
+work	"NumberTo7Segment.vhd"

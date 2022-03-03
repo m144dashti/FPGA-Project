@@ -1,0 +1,6 @@
+NET "i_clk"          LOC=P56;
+NET "i_input1"       LOC=P41;
+NET "i_input2"       LOC=P44;
+NET "i_input3"       LOC=P46;
+NET "i_input4(0)"    LOC=P48;
+

@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Mar 01 05:47:48 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "o_vs" LOCATE = SITE "P27" LEVEL 1;
+COMP "i_clk" LOCATE = SITE "P56" LEVEL 1;
+COMP "o_blue<0>" LOCATE = SITE "P29" LEVEL 1;
+COMP "o_blue<1>" LOCATE = SITE "P30" LEVEL 1;
+COMP "o_blue<2>" LOCATE = SITE "P32" LEVEL 1;
+COMP "o_hs" LOCATE = SITE "P26" LEVEL 1;
+COMP "o_red<0>" LOCATE = SITE "P46" LEVEL 1;
+COMP "o_red<1>" LOCATE = SITE "P47" LEVEL 1;
+COMP "o_red<2>" LOCATE = SITE "P48" LEVEL 1;
+COMP "o_green<0>" LOCATE = SITE "P35" LEVEL 1;
+COMP "o_green<1>" LOCATE = SITE "P40" LEVEL 1;
+COMP "o_green<2>" LOCATE = SITE "P41" LEVEL 1;
+SCHEMATIC END;
+

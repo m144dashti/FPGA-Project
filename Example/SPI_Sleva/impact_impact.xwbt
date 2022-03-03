@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=E:\FileProject\ISE Project\SPI_Sleva\impact.xsl
+OUTFILE=E:\FileProject\ISE Project\SPI_Sleva\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=E:\FileProject\ISE Project\SPI_Sleva
+LICENSE=iMPACT
+USER_INFO=iMPACT

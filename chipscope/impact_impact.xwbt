@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=E:\FileProject\ISE Project\chipscope\impact.xsl
+OUTFILE=E:\FileProject\ISE Project\chipscope\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=E:\FileProject\ISE Project\chipscope
+LICENSE=iMPACT
+USER_INFO=iMPACT

@@ -1,0 +1,4 @@
+vhdl work "USART_Synchronizer.vhd"
+vhdl work "TX.vhd"
+vhdl work "RX.vhd"
+vhdl work "USART_RX_TX.vhd"

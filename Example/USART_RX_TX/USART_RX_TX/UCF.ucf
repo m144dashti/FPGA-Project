@@ -1,0 +1,3 @@
+NET "i_clk"    	  LOC=P56;
+NET "o_tx"     	  LOC=P41;
+NET "i_rx"     	  LOC=P51;

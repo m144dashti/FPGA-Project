@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Apr 03 21:12:16 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "i_input4<0>" LOCATE = SITE "P48" LEVEL 1;
+COMP "i_clk" LOCATE = SITE "P56" LEVEL 1;
+COMP "i_input1" LOCATE = SITE "P41" LEVEL 1;
+COMP "i_input2" LOCATE = SITE "P44" LEVEL 1;
+COMP "i_input3" LOCATE = SITE "P46" LEVEL 1;
+SCHEMATIC END;
+

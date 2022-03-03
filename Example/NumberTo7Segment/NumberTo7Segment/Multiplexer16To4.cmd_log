@@ -1,0 +1,2 @@
+vhdtdtfi -prj NumberTo7Segment -o "E:/FileProject/ISE Project/NumberTo7Segment/Multiplexer16To4.vhi" -module Multiplexer16To4 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Multiplexer16To4.vhd 
+vhdtdtfi -prj NumberTo7Segment -o "E:/FileProject/ISE Project/NumberTo7Segment/Multiplexer16To4.vhi" -module Multiplexer16To4 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Multiplexer16To4.vhd 

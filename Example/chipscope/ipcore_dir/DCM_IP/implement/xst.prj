@@ -1,0 +1,2 @@
+vhdl work ../../DCM_IP.vhd
+vhdl work ../example_design/DCM_IP_exdes.vhd

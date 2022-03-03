@@ -1,0 +1,31 @@
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.xst" -ofn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.syr" 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.xst" -ofn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.syr" 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.xst" -ofn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.syr" 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.xst" -ofn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.syr" 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.xst" -ofn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.syr" 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.xst" -ofn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.syr" 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.xst" -ofn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.syr" 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.xst" -ofn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.syr" 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.xst" -ofn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc6slx9-tqg144-2 "main_spi_sleva.ngc" main_spi_sleva.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_spi_sleva_map.ncd main_spi_sleva.ngd main_spi_sleva.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc6slx9-tqg144-2 "main_spi_sleva.ngc" main_spi_sleva.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_spi_sleva_map.ncd main_spi_sleva.ngd main_spi_sleva.pcf 
+par -w -intstyle ise -ol high -mt off main_spi_sleva_map.ncd main_spi_sleva.ncd main_spi_sleva.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main_spi_sleva.twx main_spi_sleva.ncd -o main_spi_sleva.twr main_spi_sleva.pcf -ucf UCF.ucf 
+bitgen -intstyle ise -f main_spi_sleva.ut main_spi_sleva.ncd 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.xst" -ofn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.syr" 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.xst" -ofn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc6slx9-tqg144-2 "main_spi_sleva.ngc" main_spi_sleva.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc6slx9-tqg144-2 "main_spi_sleva.ngc" main_spi_sleva.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_spi_sleva_map.ncd main_spi_sleva.ngd main_spi_sleva.pcf 
+par -w -intstyle ise -ol high -mt off main_spi_sleva_map.ncd main_spi_sleva.ncd main_spi_sleva.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main_spi_sleva.twx main_spi_sleva.ncd -o main_spi_sleva.twr main_spi_sleva.pcf -ucf UCF.ucf 
+bitgen -intstyle ise -f main_spi_sleva.ut main_spi_sleva.ncd 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.xst" -ofn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc6slx9-tqg144-2 "main_spi_sleva.ngc" main_spi_sleva.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_spi_sleva_map.ncd main_spi_sleva.ngd main_spi_sleva.pcf 
+par -w -intstyle ise -ol high -mt off main_spi_sleva_map.ncd main_spi_sleva.ncd main_spi_sleva.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main_spi_sleva.twx main_spi_sleva.ncd -o main_spi_sleva.twr main_spi_sleva.pcf -ucf UCF.ucf 
+bitgen -intstyle ise -f main_spi_sleva.ut main_spi_sleva.ncd 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.xst" -ofn "E:/FileProject/ISE Project/SPI_Sleva/main_spi_sleva.syr" 

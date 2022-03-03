@@ -1,0 +1,18 @@
+# Output products list for <ILA_IP>
+ILA_IP.asy
+ILA_IP.cdc
+ILA_IP.constraints\ILA_IP.ucf
+ILA_IP.constraints\ILA_IP.xdc
+ILA_IP.gise
+ILA_IP.ncf
+ILA_IP.ngc
+ILA_IP.ucf
+ILA_IP.vhd
+ILA_IP.vho
+ILA_IP.xco
+ILA_IP.xdc
+ILA_IP.xise
+ILA_IP_flist.txt
+ILA_IP_readme.txt
+ILA_IP_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

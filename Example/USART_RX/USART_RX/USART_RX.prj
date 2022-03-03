@@ -1,0 +1,7 @@
+vhdl work "Multiplexer16To4.vhd"
+vhdl work "Decoder2To4.vhd"
+vhdl work "Counter.vhd"
+vhdl work "BcdTo7Segment.vhd"
+vhdl work "RX.vhd"
+vhdl work "NumberTo7Segment.vhd"
+vhdl work "USART_RX.vhd"

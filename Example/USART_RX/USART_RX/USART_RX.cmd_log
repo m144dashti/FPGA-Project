@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX/USART_RX.xst" -ofn "E:/FileProject/ISE Project/USART_RX/USART_RX.syr" 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX/USART_RX.xst" -ofn "E:/FileProject/ISE Project/USART_RX/USART_RX.syr" 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX/USART_RX.xst" -ofn "E:/FileProject/ISE Project/USART_RX/USART_RX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc6slx9-tqg144-2 "USART_RX.ngc" USART_RX.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o USART_RX_map.ncd USART_RX.ngd USART_RX.pcf 
+par -w -intstyle ise -ol high -mt off USART_RX_map.ncd USART_RX.ncd USART_RX.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml USART_RX.twx USART_RX.ncd -o USART_RX.twr USART_RX.pcf -ucf UCF.ucf 
+bitgen -intstyle ise -f USART_RX.ut USART_RX.ncd 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/Example/USART_RX/USART_RX/USART_RX.xst" -ofn "E:/FileProject/ISE Project/Example/USART_RX/USART_RX/USART_RX.syr" 

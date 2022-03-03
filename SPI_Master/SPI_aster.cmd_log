@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/SPI_Master/SPI_aster.xst" -ofn "E:/FileProject/ISE Project/SPI_Master/SPI_aster.syr" 

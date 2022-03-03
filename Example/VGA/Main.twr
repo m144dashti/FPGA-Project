@@ -1,0 +1,68 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+E:\Program\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v
+3 -s 2 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf UCF.ucf
+
+Design file:              Main.ncd
+Physical constraint file: Main.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock i_clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+o_blue<0>   |        15.627(R)|      SLOW  |         3.567(R)|      FAST  |clk               |   0.000|
+o_blue<1>   |        15.811(R)|      SLOW  |         3.665(R)|      FAST  |clk               |   0.000|
+o_green<0>  |        12.011(R)|      SLOW  |         4.060(R)|      FAST  |clk               |   0.000|
+o_green<1>  |        16.260(R)|      SLOW  |         3.962(R)|      FAST  |clk               |   0.000|
+o_hs        |         8.466(R)|      SLOW  |         2.819(R)|      FAST  |clk               |   0.000|
+o_red<0>    |        11.276(R)|      SLOW  |         3.653(R)|      FAST  |clk               |   0.000|
+o_red<1>    |        15.534(R)|      SLOW  |         3.513(R)|      FAST  |clk               |   0.000|
+o_vs        |         8.964(R)|      SLOW  |         3.091(R)|      FAST  |clk               |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock i_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_clk          |    4.309|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Mon Mar 01 05:48:09 2021 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4571 MB
+
+
+

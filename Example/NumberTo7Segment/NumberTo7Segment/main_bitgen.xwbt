@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\FileProject\ISE Project\NumberTo7Segment\main.ncd
+OUTFILE=E:\FileProject\ISE Project\NumberTo7Segment\main.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=E:\FileProject\ISE Project\NumberTo7Segment
+LICENSE=WebPack
+USER_INFO=__0_0_0

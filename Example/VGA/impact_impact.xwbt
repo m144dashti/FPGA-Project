@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=E:\FPGA\ISE Project\VGA\impact.xsl
+OUTFILE=E:\FPGA\ISE Project\VGA\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=E:\FPGA\ISE Project\VGA
+LICENSE=iMPACT
+USER_INFO=iMPACT

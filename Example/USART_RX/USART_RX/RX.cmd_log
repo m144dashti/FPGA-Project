@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX/RX.xst" -ofn "E:/FileProject/ISE Project/USART_RX/RX.syr" 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX/RX.xst" -ofn "E:/FileProject/ISE Project/USART_RX/RX.syr" 
+vhdtdtfi -prj USART_RX -o "E:/FileProject/ISE Project/USART_RX/RX.vhi" -module RX -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work RX.vhd 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/Example/USART_RX/USART_RX/RX.xst" -ofn "E:/FileProject/ISE Project/Example/USART_RX/USART_RX/RX.syr" 

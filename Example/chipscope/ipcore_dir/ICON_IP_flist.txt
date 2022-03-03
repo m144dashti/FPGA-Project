@@ -1,0 +1,16 @@
+# Output products list for <ICON_IP>
+ICON_IP.asy
+ICON_IP.constraints\ICON_IP.ucf
+ICON_IP.constraints\ICON_IP.xdc
+ICON_IP.gise
+ICON_IP.ngc
+ICON_IP.sym
+ICON_IP.ucf
+ICON_IP.vhd
+ICON_IP.vho
+ICON_IP.xco
+ICON_IP.xdc
+ICON_IP.xise
+ICON_IP_flist.txt
+ICON_IP_readme.txt
+ICON_IP_xmdf.tcl

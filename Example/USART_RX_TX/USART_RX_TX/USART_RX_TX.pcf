@@ -1,0 +1,10 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Mar 22 06:57:31 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "o_tx" LOCATE = SITE "P41" LEVEL 1;
+COMP "i_clk" LOCATE = SITE "P56" LEVEL 1;
+COMP "i_rx" LOCATE = SITE "P51" LEVEL 1;
+SCHEMATIC END;
+

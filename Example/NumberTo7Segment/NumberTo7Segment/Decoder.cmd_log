@@ -1,0 +1,1 @@
+vhdtdtfi -prj NumberTo7Segment -o "E:/FileProject/ISE Project/NumberTo7Segment/Decoder.vhi" -module Decoder -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Decoder2To4.vhd 

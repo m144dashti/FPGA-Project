@@ -1,0 +1,2 @@
+vhdl work "SPI_Master.vhd"
+vhdl work "tb5.vhd"

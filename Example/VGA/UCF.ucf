@@ -1,0 +1,12 @@
+NET "i_clk"      LOC = P56;
+NET "o_red(0)"   LOC = P46;
+NET "o_red(1)"   LOC = P47;
+NET "o_red(2)"   LOC = P48;
+NET "o_green(0)" LOC = P35;
+NET "o_green(1)" LOC = P40;
+NET "o_green(2)" LOC = P41;
+NET "o_blue(0)"  LOC = P29;
+NET "o_blue(1)"  LOC = P30;
+NET "o_blue(2)"  LOC = P32;
+NET "o_vs"       LOC = P27;
+NET "o_hs"       LOC = P26;

@@ -1,0 +1,4 @@
+vhdl work "ipcore_dir/ICON_IP.vhd"
+vhdl work "ipcore_dir/ILA_IP.vhd"
+vhdl work "ipcore_dir/DCM_IP.vhd"
+vhdl work "main.vhd"

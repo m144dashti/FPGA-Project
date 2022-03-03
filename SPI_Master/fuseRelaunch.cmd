@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "E:/FileProject/ISE Project/SPI_Master/tb5_isim_beh.exe" -prj "E:/FileProject/ISE Project/SPI_Master/tb5_beh.prj" "work.tb5" 

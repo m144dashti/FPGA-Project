@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\FileProject\ISE Project\USART_RX\USART_RX.ncd
+OUTFILE=E:\FileProject\ISE Project\USART_RX\USART_RX.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=E:\FileProject\ISE Project\USART_RX
+LICENSE=WebPack
+USER_INFO=__0_0_0

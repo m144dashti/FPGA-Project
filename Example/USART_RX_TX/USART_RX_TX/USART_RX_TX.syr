@@ -1,0 +1,516 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.88 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.88 secs
+ 
+--> Reading design: USART_RX_TX.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "USART_RX_TX.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "USART_RX_TX"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : USART_RX_TX
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\FileProject\ISE Project\USART_RX_TX\USART_Synchronizer.vhd" into library work
+Parsing entity <USART_Synchronizer>.
+Parsing architecture <Behavioral> of entity <usart_synchronizer>.
+Parsing VHDL file "E:\FileProject\ISE Project\USART_RX_TX\TX.vhd" into library work
+Parsing entity <TX>.
+Parsing architecture <Behavioral> of entity <tx>.
+Parsing VHDL file "E:\FileProject\ISE Project\USART_RX_TX\RX.vhd" into library work
+Parsing entity <RX>.
+Parsing architecture <Behavioral> of entity <rx>.
+Parsing VHDL file "E:\FileProject\ISE Project\USART_RX_TX\USART_RX_TX.vhd" into library work
+Parsing entity <USART_RX_TX>.
+Parsing architecture <Behavioral> of entity <usart_rx_tx>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <USART_RX_TX> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <RX> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <TX> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <USART_Synchronizer> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <USART_RX_TX>.
+    Related source file is "E:\FileProject\ISE Project\USART_RX_TX\USART_RX_TX.vhd".
+    Summary:
+	no macro.
+Unit <USART_RX_TX> synthesized.
+
+Synthesizing Unit <RX>.
+    Related source file is "E:\FileProject\ISE Project\USART_RX_TX\RX.vhd".
+        g_clk_per_bit = 416
+    Found 3-bit register for signal <r_stata>.
+    Found 9-bit register for signal <r_counter>.
+    Found 9-bit register for signal <r_buffer>.
+    Found 4-bit register for signal <r_bit_counter>.
+    Found 9-bit register for signal <r_count>.
+    Found 8-bit register for signal <o_parallel>.
+    Found 1-bit register for signal <o_valid>.
+    Found finite state machine <FSM_0> for signal <r_stata>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | i_clk (rising_edge)                            |
+    | Power Up State     | state_idl                                      |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 9-bit adder for signal <r_counter[8]_GND_5_o_add_6_OUT> created at line 1241.
+    Found 4-bit adder for signal <r_bit_counter[3]_GND_5_o_add_9_OUT> created at line 56.
+    Found 9-bit adder for signal <r_count[8]_GND_5_o_add_16_OUT> created at line 1241.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  40 D-type flip-flop(s).
+	inferred  14 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <RX> synthesized.
+
+Synthesizing Unit <TX>.
+    Related source file is "E:\FileProject\ISE Project\USART_RX_TX\TX.vhd".
+        g_clk_per_bit = 416
+    Found 2-bit register for signal <r_stata>.
+    Found 10-bit register for signal <r_tx_deta>.
+    Found 1-bit register for signal <o_busy>.
+    Found 1-bit register for signal <o_tx>.
+    Found 9-bit register for signal <r_counter>.
+    Found 4-bit register for signal <r_bit_counter>.
+    Found 1-bit register for signal <o_transmit_finished>.
+    Found finite state machine <FSM_1> for signal <r_stata>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | state_idl                                      |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 9-bit adder for signal <r_counter[8]_GND_6_o_add_3_OUT> created at line 1241.
+    Found 4-bit adder for signal <r_bit_counter[3]_GND_6_o_add_5_OUT> created at line 46.
+    Found 1-bit 10-to-1 multiplexer for signal <r_bit_counter[3]_X_6_o_Mux_2_o> created at line 42.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <TX> synthesized.
+
+Synthesizing Unit <USART_Synchronizer>.
+    Related source file is "E:\FileProject\ISE Project\USART_RX_TX\USART_Synchronizer.vhd".
+    Found 1-bit register for signal <r_witing>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <USART_Synchronizer> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 4-bit adder                                           : 2
+ 9-bit adder                                           : 3
+# Registers                                            : 13
+ 1-bit register                                        : 5
+ 10-bit register                                       : 1
+ 4-bit register                                        : 2
+ 8-bit register                                        : 1
+ 9-bit register                                        : 4
+# Multiplexers                                         : 18
+ 1-bit 10-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 10
+ 4-bit 2-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 5
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <r_tx_deta_0> (without init value) has a constant value of 0 in block <My_TX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r_tx_deta_9> (without init value) has a constant value of 1 in block <My_TX>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <RX>.
+The following registers are absorbed into counter <r_count>: 1 register on signal <r_count>.
+The following registers are absorbed into counter <r_bit_counter>: 1 register on signal <r_bit_counter>.
+Unit <RX> synthesized (advanced).
+
+Synthesizing (advanced) Unit <TX>.
+The following registers are absorbed into counter <r_counter>: 1 register on signal <r_counter>.
+The following registers are absorbed into counter <r_bit_counter>: 1 register on signal <r_bit_counter>.
+Unit <TX> synthesized (advanced).
+WARNING:Xst:2677 - Node <r_buffer_8> of sequential type is unconnected in block <RX>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 9-bit adder                                           : 1
+# Counters                                             : 4
+ 4-bit up counter                                      : 2
+ 9-bit up counter                                      : 2
+# Registers                                            : 40
+ Flip-Flops                                            : 40
+# Multiplexers                                         : 12
+ 1-bit 10-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 8
+ 9-bit 2-to-1 multiplexer                              : 3
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <r_tx_deta_0> (without init value) has a constant value of 0 in block <TX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <r_tx_deta_9> (without init value) has a constant value of 1 in block <TX>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <My_RX/FSM_0> on signal <r_stata[1:3]> with user encoding.
+--------------------------------
+ State              | Encoding
+--------------------------------
+ state_idl          | 000
+ state_start_bit    | 001
+ state_recieve_deta | 010
+ state_stop_bit     | 011
+ state_clear        | 100
+--------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <My_TX/FSM_1> on signal <r_stata[1:2]> with user encoding.
+---------------------------------
+ State               | Encoding
+---------------------------------
+ state_idl           | 00
+ state_transmit_deta | 01
+ state_clear         | 10
+---------------------------------
+
+Optimizing unit <USART_RX_TX> ...
+
+Optimizing unit <RX> ...
+
+Optimizing unit <TX> ...
+WARNING:Xst:1293 - FF/Latch <My_RX/r_count_8> has a constant value of 0 in block <USART_RX_TX>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block USART_RX_TX, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 68
+ Flip-Flops                                            : 68
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : USART_RX_TX.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 131
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 4
+#      LUT2                        : 5
+#      LUT3                        : 13
+#      LUT4                        : 14
+#      LUT5                        : 10
+#      LUT6                        : 50
+#      MUXCY                       : 15
+#      MUXF7                       : 1
+#      XORCY                       : 17
+# FlipFlops/Latches                : 68
+#      FD                          : 10
+#      FDE                         : 58
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 2
+#      IBUF                        : 1
+#      OBUF                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              68  out of  11440     0%  
+ Number of Slice LUTs:                   97  out of   5720     1%  
+    Number used as Logic:                97  out of   5720     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    112
+   Number with an unused Flip Flop:      44  out of    112    39%  
+   Number with an unused LUT:            15  out of    112    13%  
+   Number of fully used LUT-FF pairs:    53  out of    112    47%  
+   Number of unique control sets:         7
+
+IO Utilization: 
+ Number of IOs:                           3
+ Number of bonded IOBs:                   3  out of    102     2%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+i_clk                              | BUFGP                  | 68    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.618ns (Maximum Frequency: 216.544MHz)
+   Minimum input arrival time before clock: 3.980ns
+   Maximum output required time after clock: 4.162ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'i_clk'
+  Clock period: 4.618ns (frequency: 216.544MHz)
+  Total number of paths / destination ports: 1394 / 126
+-------------------------------------------------------------------------
+Delay:               4.618ns (Levels of Logic = 3)
+  Source:            My_RX/r_counter_3 (FF)
+  Destination:       My_RX/r_bit_counter_3 (FF)
+  Source Clock:      i_clk rising
+  Destination Clock: i_clk rising
+
+  Data Path: My_RX/r_counter_3 to My_RX/r_bit_counter_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.525   1.271  My_RX/r_counter_3 (My_RX/r_counter_3)
+     LUT6:I1->O           16   0.254   1.182  My_RX/r_counter[8]_GND_5_o_equal_3_o<8>11 (My_RX/r_counter[8]_GND_5_o_equal_3_o<8>1)
+     LUT5:I4->O            4   0.254   0.804  My_RX/_n0121_inv1_rstpot (My_RX/_n0121_inv1_rstpot)
+     LUT5:I4->O            1   0.254   0.000  My_RX/r_bit_counter_3_dpot (My_RX/r_bit_counter_3_dpot)
+     FDE:D                     0.074          My_RX/r_bit_counter_3
+    ----------------------------------------
+    Total                      4.618ns (1.361ns logic, 3.257ns route)
+                                       (29.5% logic, 70.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'i_clk'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              3.980ns (Levels of Logic = 3)
+  Source:            i_rx (PAD)
+  Destination:       My_RX/r_stata_FSM_FFd2 (FF)
+  Destination Clock: i_clk rising
+
+  Data Path: i_rx to My_RX/r_stata_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   1.328   1.284  i_rx_IBUF (i_rx_IBUF)
+     LUT4:I0->O            1   0.254   0.790  My_RX/r_stata_FSM_FFd2-In_SW1 (N52)
+     LUT6:I4->O            1   0.250   0.000  My_RX/r_stata_FSM_FFd2-In (My_RX/r_stata_FSM_FFd2-In)
+     FD:D                      0.074          My_RX/r_stata_FSM_FFd2
+    ----------------------------------------
+    Total                      3.980ns (1.906ns logic, 2.074ns route)
+                                       (47.9% logic, 52.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'i_clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            My_TX/o_tx (FF)
+  Destination:       o_tx (PAD)
+  Source Clock:      i_clk rising
+
+  Data Path: My_TX/o_tx to o_tx
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   0.725  My_TX/o_tx (My_TX/o_tx)
+     OBUF:I->O                 2.912          o_tx_OBUF (o_tx)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock i_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_clk          |    4.618|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 40.00 secs
+Total CPU time to Xst completion: 39.89 secs
+ 
+--> 
+
+Total memory usage is 4517324 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,22 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Apr 04 05:54:18 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "o_enable<3>" LOCATE = SITE "P75" LEVEL 1;
+COMP "io_mosi" LOCATE = SITE "P50" LEVEL 1;
+COMP "i_clk" LOCATE = SITE "P56" LEVEL 1;
+COMP "i_ss" LOCATE = SITE "P41" LEVEL 1;
+COMP "o_7segment<0>" LOCATE = SITE "P80" LEVEL 1;
+COMP "o_7segment<1>" LOCATE = SITE "P79" LEVEL 1;
+COMP "o_7segment<2>" LOCATE = SITE "P83" LEVEL 1;
+COMP "o_7segment<3>" LOCATE = SITE "P82" LEVEL 1;
+COMP "o_7segment<4>" LOCATE = SITE "P81" LEVEL 1;
+COMP "o_7segment<5>" LOCATE = SITE "P78" LEVEL 1;
+COMP "i_sck" LOCATE = SITE "P51" LEVEL 1;
+COMP "o_7segment<6>" LOCATE = SITE "P84" LEVEL 1;
+COMP "o_enable<0>" LOCATE = SITE "P66" LEVEL 1;
+COMP "o_enable<1>" LOCATE = SITE "P74" LEVEL 1;
+COMP "o_enable<2>" LOCATE = SITE "P67" LEVEL 1;
+SCHEMATIC END;
+

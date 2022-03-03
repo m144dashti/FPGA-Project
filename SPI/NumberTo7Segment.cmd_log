@@ -1,0 +1,1 @@
+vhdtdtfi -prj SPI -o "E:/FileProject/ISE Project/SPI/NumberTo7Segment.vhi" -module NumberTo7Segment -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Multiplexer16To4.vhd -lib work Decoder2To4.vhd -lib work Counter.vhd -lib work BcdTo7Segment.vhd -lib work NumberTo7Segment.vhd 

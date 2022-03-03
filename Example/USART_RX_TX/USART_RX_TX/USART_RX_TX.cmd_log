@@ -1,0 +1,86 @@
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.xst" -ofn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.syr" 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.xst" -ofn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 "USART_RX_TX.ngc" USART_RX_TX.ngd  
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.xst" -ofn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 "USART_RX_TX.ngc" USART_RX_TX.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o USART_RX_TX_map.ncd USART_RX_TX.ngd USART_RX_TX.pcf 
+par -w -intstyle ise -ol high -mt off USART_RX_TX_map.ncd USART_RX_TX.ncd USART_RX_TX.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml USART_RX_TX.twx USART_RX_TX.ncd -o USART_RX_TX.twr USART_RX_TX.pcf 
+bitgen -intstyle ise -f USART_RX_TX.ut USART_RX_TX.ncd 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.xst" -ofn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc6slx9-tqg144-2 "USART_RX_TX.ngc" USART_RX_TX.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc6slx9-tqg144-2 "USART_RX_TX.ngc" USART_RX_TX.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o USART_RX_TX_map.ncd USART_RX_TX.ngd USART_RX_TX.pcf 
+par -w -intstyle ise -ol high -mt off USART_RX_TX_map.ncd USART_RX_TX.ncd USART_RX_TX.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml USART_RX_TX.twx USART_RX_TX.ncd -o USART_RX_TX.twr USART_RX_TX.pcf -ucf UCF.ucf 
+bitgen -intstyle ise -f USART_RX_TX.ut USART_RX_TX.ncd 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.xst" -ofn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc6slx9-tqg144-2 "USART_RX_TX.ngc" USART_RX_TX.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o USART_RX_TX_map.ncd USART_RX_TX.ngd USART_RX_TX.pcf 
+par -w -intstyle ise -ol high -mt off USART_RX_TX_map.ncd USART_RX_TX.ncd USART_RX_TX.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml USART_RX_TX.twx USART_RX_TX.ncd -o USART_RX_TX.twr USART_RX_TX.pcf -ucf UCF.ucf 
+bitgen -intstyle ise -f USART_RX_TX.ut USART_RX_TX.ncd 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.xst" -ofn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.syr" 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.xst" -ofn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc6slx9-tqg144-2 "USART_RX_TX.ngc" USART_RX_TX.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o USART_RX_TX_map.ncd USART_RX_TX.ngd USART_RX_TX.pcf 
+par -w -intstyle ise -ol high -mt off USART_RX_TX_map.ncd USART_RX_TX.ncd USART_RX_TX.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml USART_RX_TX.twx USART_RX_TX.ncd -o USART_RX_TX.twr USART_RX_TX.pcf -ucf UCF.ucf 
+bitgen -intstyle ise -f USART_RX_TX.ut USART_RX_TX.ncd 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.xst" -ofn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc6slx9-tqg144-2 "USART_RX_TX.ngc" USART_RX_TX.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o USART_RX_TX_map.ncd USART_RX_TX.ngd USART_RX_TX.pcf 
+par -w -intstyle ise -ol high -mt off USART_RX_TX_map.ncd USART_RX_TX.ncd USART_RX_TX.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml USART_RX_TX.twx USART_RX_TX.ncd -o USART_RX_TX.twr USART_RX_TX.pcf -ucf UCF.ucf 
+bitgen -intstyle ise -f USART_RX_TX.ut USART_RX_TX.ncd 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.xst" -ofn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.syr" 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.xst" -ofn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc6slx9-tqg144-2 "USART_RX_TX.ngc" USART_RX_TX.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o USART_RX_TX_map.ncd USART_RX_TX.ngd USART_RX_TX.pcf 
+par -w -intstyle ise -ol high -mt off USART_RX_TX_map.ncd USART_RX_TX.ncd USART_RX_TX.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml USART_RX_TX.twx USART_RX_TX.ncd -o USART_RX_TX.twr USART_RX_TX.pcf -ucf UCF.ucf 
+bitgen -intstyle ise -f USART_RX_TX.ut USART_RX_TX.ncd 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.xst" -ofn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.syr" 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.xst" -ofn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc6slx9-tqg144-2 "USART_RX_TX.ngc" USART_RX_TX.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o USART_RX_TX_map.ncd USART_RX_TX.ngd USART_RX_TX.pcf 
+par -w -intstyle ise -ol high -mt off USART_RX_TX_map.ncd USART_RX_TX.ncd USART_RX_TX.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml USART_RX_TX.twx USART_RX_TX.ncd -o USART_RX_TX.twr USART_RX_TX.pcf -ucf UCF.ucf 
+bitgen -intstyle ise -f USART_RX_TX.ut USART_RX_TX.ncd 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.xst" -ofn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc6slx9-tqg144-2 "USART_RX_TX.ngc" USART_RX_TX.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o USART_RX_TX_map.ncd USART_RX_TX.ngd USART_RX_TX.pcf 
+par -w -intstyle ise -ol high -mt off USART_RX_TX_map.ncd USART_RX_TX.ncd USART_RX_TX.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml USART_RX_TX.twx USART_RX_TX.ncd -o USART_RX_TX.twr USART_RX_TX.pcf -ucf UCF.ucf 
+bitgen -intstyle ise -f USART_RX_TX.ut USART_RX_TX.ncd 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.xst" -ofn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc6slx9-tqg144-2 "USART_RX_TX.ngc" USART_RX_TX.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o USART_RX_TX_map.ncd USART_RX_TX.ngd USART_RX_TX.pcf 
+par -w -intstyle ise -ol high -mt off USART_RX_TX_map.ncd USART_RX_TX.ncd USART_RX_TX.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml USART_RX_TX.twx USART_RX_TX.ncd -o USART_RX_TX.twr USART_RX_TX.pcf -ucf UCF.ucf 
+bitgen -intstyle ise -f USART_RX_TX.ut USART_RX_TX.ncd 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.xst" -ofn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc6slx9-tqg144-2 "USART_RX_TX.ngc" USART_RX_TX.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o USART_RX_TX_map.ncd USART_RX_TX.ngd USART_RX_TX.pcf 
+par -w -intstyle ise -ol high -mt off USART_RX_TX_map.ncd USART_RX_TX.ncd USART_RX_TX.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml USART_RX_TX.twx USART_RX_TX.ncd -o USART_RX_TX.twr USART_RX_TX.pcf -ucf UCF.ucf 
+bitgen -intstyle ise -f USART_RX_TX.ut USART_RX_TX.ncd 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.xst" -ofn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.syr" 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.xst" -ofn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc6slx9-tqg144-2 "USART_RX_TX.ngc" USART_RX_TX.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o USART_RX_TX_map.ncd USART_RX_TX.ngd USART_RX_TX.pcf 
+par -w -intstyle ise -ol high -mt off USART_RX_TX_map.ncd USART_RX_TX.ncd USART_RX_TX.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml USART_RX_TX.twx USART_RX_TX.ncd -o USART_RX_TX.twr USART_RX_TX.pcf -ucf UCF.ucf 
+bitgen -intstyle ise -f USART_RX_TX.ut USART_RX_TX.ncd 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.xst" -ofn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc6slx9-tqg144-2 "USART_RX_TX.ngc" USART_RX_TX.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o USART_RX_TX_map.ncd USART_RX_TX.ngd USART_RX_TX.pcf 
+par -w -intstyle ise -ol high -mt off USART_RX_TX_map.ncd USART_RX_TX.ncd USART_RX_TX.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml USART_RX_TX.twx USART_RX_TX.ncd -o USART_RX_TX.twr USART_RX_TX.pcf -ucf UCF.ucf 
+bitgen -intstyle ise -f USART_RX_TX.ut USART_RX_TX.ncd 
+xst -intstyle ise -ifn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.xst" -ofn "E:/FileProject/ISE Project/USART_RX_TX/USART_RX_TX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc6slx9-tqg144-2 "USART_RX_TX.ngc" USART_RX_TX.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o USART_RX_TX_map.ncd USART_RX_TX.ngd USART_RX_TX.pcf 
+par -w -intstyle ise -ol high -mt off USART_RX_TX_map.ncd USART_RX_TX.ncd USART_RX_TX.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml USART_RX_TX.twx USART_RX_TX.ncd -o USART_RX_TX.twr USART_RX_TX.pcf -ucf UCF.ucf 
+bitgen -intstyle ise -f USART_RX_TX.ut USART_RX_TX.ncd 

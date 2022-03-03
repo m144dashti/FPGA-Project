@@ -1,0 +1,15 @@
+NET "i_clk"         LOC=P56;
+NET "i_miso"       LOC=P41;
+NET "o_sclk"        LOC=P46;
+NET "o_mosi"        LOC=P44;
+NET "o_7segment(0)" LOC=P80;
+NET "o_7segment(1)" LOC=P79;
+NET "o_7segment(2)" LOC=P83;
+NET "o_7segment(3)" LOC=P82;
+NET "o_7segment(4)" LOC=P81;
+NET "o_7segment(5)" LOC=P78;
+NET "o_7segment(6)" LOC=P84;
+NET "o_enable(0)"   LOC=P66;
+NET "o_enable(1)"   LOC=P74;
+NET "o_enable(2)"   LOC=P67;
+NET "o_enable(3)"   LOC=P75;

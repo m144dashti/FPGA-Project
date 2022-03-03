@@ -1,0 +1,3 @@
+vhdtdtfi -lib work Multiplexer16To4.vhd -lib work Decoder2To4.vhd -lib work Counter.vhd -lib work BcdTo7Segment.vhd -lib work NumberTo7Segment.vhd -prj SPI_Sleva -o NumberTo7Segment.spl -module NumberTo7Segment -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 NumberTo7Segment.spl {E:/FileProject/ISE Project/SPI_Sleva/NumberTo7Segment.sym} 
+vhdtdtfi -prj SPI_Sleva -o "E:/FileProject/ISE Project/SPI_Sleva/NumberTo7Segment.vhi" -module NumberTo7Segment -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Multiplexer16To4.vhd -lib work Decoder2To4.vhd -lib work Counter.vhd -lib work BcdTo7Segment.vhd -lib work NumberTo7Segment.vhd 

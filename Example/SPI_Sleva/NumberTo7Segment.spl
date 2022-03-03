@@ -1,0 +1,7 @@
+[Inputs]
+i_clk
+=i_number[15:0]=
+[Outputs]
+=o_7segment[6:0]=
+=o_enable[3:0]=
+[BiDir]

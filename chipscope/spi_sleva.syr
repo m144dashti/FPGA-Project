@@ -1,0 +1,443 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.90 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.90 secs
+ 
+--> Reading design: spi_sleva.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "spi_sleva.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "spi_sleva"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : spi_sleva
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\FileProject\ISE Project\chipscope\spi_sleva.vhd" into library work
+Parsing entity <spi_sleva>.
+Parsing architecture <Behavioral> of entity <spi_sleva>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <spi_sleva> (architecture <Behavioral>) with generics from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <spi_sleva>.
+    Related source file is "E:\FileProject\ISE Project\chipscope\spi_sleva.vhd".
+        g_number_bit = 7
+    Found 8-bit register for signal <r_parallel_reseive>.
+    Found 8-bit register for signal <o_parallel_reseive>.
+    Found 1-bit register for signal <o_finesh_transmit>.
+    Found 3-bit register for signal <r_conter_bit_transmit>.
+    Found 1-bit register for signal <io_mosi>.
+    Found 3-bit register for signal <r_conter_bit_reseive>.
+    Found 3-bit adder for signal <r_conter_bit_reseive[2]_GND_4_o_add_1_OUT> created at line 35.
+    Found 3-bit adder for signal <r_conter_bit_transmit[2]_GND_4_o_add_12_OUT> created at line 50.
+    Found 1-bit 8-to-1 multiplexer for signal <r_conter_bit_transmit[2]_r_parallel_transmit[7]_Mux_13_o> created at line 51.
+WARNING:Xst:737 - Found 1-bit latch for signal <o_sck>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   1 Latch(s).
+	inferred   9 Multiplexer(s).
+Unit <spi_sleva> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 3-bit adder                                           : 2
+# Registers                                            : 6
+ 1-bit register                                        : 2
+ 3-bit register                                        : 2
+ 8-bit register                                        : 2
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Multiplexers                                         : 9
+ 1-bit 2-to-1 multiplexer                              : 8
+ 1-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <spi_sleva>.
+The following registers are absorbed into counter <r_conter_bit_transmit>: 1 register on signal <r_conter_bit_transmit>.
+The following registers are absorbed into counter <r_conter_bit_reseive>: 1 register on signal <r_conter_bit_reseive>.
+Unit <spi_sleva> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 3-bit up counter                                      : 2
+# Registers                                            : 18
+ Flip-Flops                                            : 18
+# Multiplexers                                         : 9
+ 1-bit 2-to-1 multiplexer                              : 8
+ 1-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <spi_sleva> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block spi_sleva, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : spi_sleva.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 28
+#      INV                         : 1
+#      LUT2                        : 3
+#      LUT3                        : 3
+#      LUT4                        : 2
+#      LUT5                        : 16
+#      LUT6                        : 2
+#      MUXF7                       : 1
+# FlipFlops/Latches                : 25
+#      FD                          : 6
+#      FDE                         : 16
+#      FDE_1                       : 2
+#      LD                          : 1
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 23
+#      IBUF                        : 12
+#      OBUF                        : 11
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              24  out of  11440     0%  
+ Number of Slice LUTs:                   27  out of   5720     0%  
+    Number used as Logic:                27  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     27
+   Number with an unused Flip Flop:       3  out of     27    11%  
+   Number with an unused LUT:             0  out of     27     0%  
+   Number of fully used LUT-FF pairs:    24  out of     27    88%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    102    22%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                 | Clock buffer(FF name)  | Load  |
+-------------------------------------------------------------+------------------------+-------+
+i_clk                                                        | IBUF+BUFG              | 24    |
+i_start_transmit_i_cs_OR_3_o(i_start_transmit_i_cs_OR_3_o1:O)| NONE(*)(o_sck)         | 1     |
+-------------------------------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.271ns (Maximum Frequency: 440.335MHz)
+   Minimum input arrival time before clock: 3.372ns
+   Maximum output required time after clock: 4.174ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'i_clk'
+  Clock period: 2.271ns (frequency: 440.335MHz)
+  Total number of paths / destination ports: 92 / 32
+-------------------------------------------------------------------------
+Delay:               2.271ns (Levels of Logic = 1)
+  Source:            r_conter_bit_reseive_2 (FF)
+  Destination:       r_parallel_reseive_0 (FF)
+  Source Clock:      i_clk rising
+  Destination Clock: i_clk rising
+
+  Data Path: r_conter_bit_reseive_2 to r_parallel_reseive_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              17   0.525   1.437  r_conter_bit_reseive_2 (r_conter_bit_reseive_2)
+     LUT5:I2->O            1   0.235   0.000  Mmux_r_parallel_reseive[5]_io_miso_MUX_3_o11 (r_parallel_reseive[5]_io_miso_MUX_3_o)
+     FDE:D                     0.074          r_parallel_reseive_5
+    ----------------------------------------
+    Total                      2.271ns (0.834ns logic, 1.437ns route)
+                                       (36.7% logic, 63.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'i_clk'
+  Total number of paths / destination ports: 40 / 33
+-------------------------------------------------------------------------
+Offset:              3.372ns (Levels of Logic = 2)
+  Source:            i_cs (PAD)
+  Destination:       o_parallel_reseive_0 (FF)
+  Destination Clock: i_clk rising
+
+  Data Path: i_cs to o_parallel_reseive_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            20   1.328   1.716  i_cs_IBUF (i_cs_IBUF)
+     LUT5:I0->O            1   0.254   0.000  o_parallel_reseive_0_dpot (o_parallel_reseive_0_dpot)
+     FDE:D                     0.074          o_parallel_reseive_0
+    ----------------------------------------
+    Total                      3.372ns (1.656ns logic, 1.716ns route)
+                                       (49.1% logic, 50.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'i_start_transmit_i_cs_OR_3_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.045ns (Levels of Logic = 1)
+  Source:            i_clk (PAD)
+  Destination:       o_sck (LATCH)
+  Destination Clock: i_start_transmit_i_cs_OR_3_o falling
+
+  Data Path: i_clk to o_sck
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  i_clk_IBUF (i_clk_IBUF)
+     LD:D                      0.036          o_sck
+    ----------------------------------------
+    Total                      2.045ns (1.364ns logic, 0.681ns route)
+                                       (66.7% logic, 33.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'i_clk'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            o_parallel_reseive_7 (FF)
+  Destination:       o_parallel_reseive<7> (PAD)
+  Source Clock:      i_clk rising
+
+  Data Path: o_parallel_reseive_7 to o_parallel_reseive<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.525   0.725  o_parallel_reseive_7 (o_parallel_reseive_7)
+     OBUF:I->O                 2.912          o_parallel_reseive_7_OBUF (o_parallel_reseive<7>)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'i_start_transmit_i_cs_OR_3_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.174ns (Levels of Logic = 1)
+  Source:            o_sck (LATCH)
+  Destination:       o_sck (PAD)
+  Source Clock:      i_start_transmit_i_cs_OR_3_o falling
+
+  Data Path: o_sck to o_sck
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.581   0.681  o_sck (o_sck_OBUF)
+     OBUF:I->O                 2.912          o_sck_OBUF (o_sck)
+    ----------------------------------------
+    Total                      4.174ns (3.493ns logic, 0.681ns route)
+                                       (83.7% logic, 16.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock i_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_clk          |    2.271|         |    1.973|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 34.00 secs
+Total CPU time to Xst completion: 33.89 secs
+ 
+--> 
+
+Total memory usage is 4516816 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

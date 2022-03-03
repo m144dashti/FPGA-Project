@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\FPGA\ISE Project\VGA\Main.ncd
+OUTFILE=E:\FPGA\ISE Project\VGA\Main.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=E:\FPGA\ISE Project\VGA
+LICENSE=WebPack
+USER_INFO=__0_0_0
